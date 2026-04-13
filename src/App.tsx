@@ -1,10 +1,16 @@
-import './App.css'
+import '@/App.css'
+import ExpertList from './features/experts/ExpertList';
+import { mockExperts } from "./features/experts/mockData";
+import Header from './commons/Header/Header';
+import Footer from './commons/Footer/Footer';
 
 function App() {
 
   return (
     <>
-      <h1>Vite + React</h1>
+      <Header />
+      <ExpertList experts={mockExperts} />
+      <Footer />
     </>
   )
 }
